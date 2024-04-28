@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://byui-cse.github.io/wdd130-ww-course/week02/ponder-home-enhancement-css.html -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 130 | W02 | Course Home Page Enhancement</title>
+  <link rel="shortcut icon" href="https://byui-cse.github.io/wdd130-ww-course/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./WDD 130 _ W02 _ Course Home Page Enhancement_files/css2" rel="stylesheet">
+  <link rel="stylesheet" href="./WDD 130 _ W02 _ Course Home Page Enhancement_files/course.css">
+  <link rel="stylesheet" href="./WDD 130 _ W02 _ Course Home Page Enhancement_files/ir-black.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="page">
+      <h1>WDD 130<span id="coursetitle">: Web Fundamentals</span></h1>
+      <img src="./WDD 130 _ W02 _ Course Home Page Enhancement_files/byui-logo.svg" alt="BYU-I logo" class="logo">
+    </div>
+  </header>
+
+  <main class="page">
+    <nav>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/">Home</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week01/">W1</a></span>
+      <span class="active"><a href="https://byui-cse.github.io/wdd130-ww-course/week02/">W2</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week03/">W3</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week04/">W4</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week05/">W5</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week06/">W6</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week07/">W7</a></span>
+      <span><a href="https://byui.instructure.com/calendar/" target="_blank">I-Learn</a></span>
+    </nav>
+    <h2>W02: Enhancing Your Course Home Page</h2>
+    <h3>Overview</h3>
+    <p>This assignment has you apply the concepts that you have learned from the learning activities
+      to enhance the home page with HTML standards, CSS, and testing with the W3C validators.</p>
+
+    <h3>Instructions</h3>
+    <h4 class="step">Learning Activity</h4>
+    <div class="callout warning">If you have not completed the <a href="https://byui-cse.github.io/wdd130-ww-course/week02/prepare-css-introduction.html">An Introduction
+        to CSS</a> learning activity, do so now
+      or you will be lost in the instructions.</div>
+    <h4 class="step">HTML: Add &lt;head&gt; meta Elements</h4>
+    <ol>
+      <li>Open your course home page, <strong>index.html</strong> for editing.</li>
+      <li>Add two new meta tags to your <code>head</code> section, after the <code>title</code> and
+        before the CSS external file <code>link</code> element. The meta description and the meta
+        author.
+        <pre><code class="html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"Describe your home page here using keywords like your name, the course, the purpose of the page."</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"author"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"Your name"</span>&gt;</span></code></pre>
+        <div class="callout info">
+          <p><strong>Description</strong><br>"Specifying a description that includes keywords
+            relating to the content of your page is useful as it has the potential to make your page
+            appear higher in relevant searches performed in search engines"</p>
+          <p><strong>Author</strong><br>"Specifying an author is beneficial in many ways: it is
+            useful to be able to understand who wrote the
+            page, if you have any questions about the content and you would like to contact them.
+            Some content management systems have facilities to automatically extract page author
+            information and make it available for such purposes." - <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description?ref=frontendchecklist" target="_blank">MDN</a></p>
+        </div>
+      </li>
+    </ol>
+    <h4 class="step">HTML: &lt;body&gt;</h4>
+    <ol>
+
+      <li>In the <code>body</code> section, add an <code>aside</code> element after the existing
+        <code>main</code> element and before the <code>footer</code>.
+      </li>
+      <li>In the <code>aside</code> element, add the following child elements and element content:
+        <ul class="check">
+          <li><code>h2</code> - your state or country.</li>
+          <li><code>img</code> - a picture that can represent your state or country.</li>
+          <li><code>p</code> - a brief paragraph describing your state or country.</li>
+        </ul>
+        <details open="">
+          <summary>Example</summary>
+          <pre><code class="html hljs language-xml">...
+<span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">aside</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Utah<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"images/utah.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Utah landscape"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Utah is a state in the western United States. It is bordered by Colorado to the east, Wyoming to the northeast, Idaho to the north, Arizona to the south, and Nevada to the west. It also touches a corner of New Mexico in the southeast. The state is a center of transportation, education, information technology, and research, and a major tourist destination for outdoor recreation. Salt Lake City, the state capital and largest city, is home to the headquarters of The Church of Jesus Christ of Latter-day Saints (LDS Church).<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">aside</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
+  ...</code></pre>
+        </details>
+      </li>
+    </ol>
+    <h4 class="step">CSS</h4>
+    <ol>
+      <li>Open the <strong>styles.css</strong> file for editing.</li>
+      <li>Add a CSS declaration to the <code>main</code> selector to limit its width for now.
+        <details open="">
+          <summary>Example</summary>
+          <pre><code class="css hljs language-css"><span class="hljs-selector-tag">main</span> {
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">840px</span>;
+}</code></pre>
+        </details>
+      </li>
+      <li>Add CSS declarations for the following properties for an <code>aside</code> element
+        selector.
+        <ul class="check">
+          <li>width</li>
+          <li>margin</li>
+          <li>border</li>
+          <li>padding</li>
+          <li>background color</li>
+          <li>color
+            <div class="callout info">Be sure to check the contrast ratio between your foreground
+              and background colors. <a href="https://contrast-ratio.com/" target="_blank">contrast-ratio.com</a></div>
+          </li>
+        </ul>
+        <details open="">
+          <summary>Example</summary>
+          <pre><code class="css hljs language-css"><span class="hljs-selector-tag">aside</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">20rem</span>
+  margin: <span class="hljs-number">1rem</span>;
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.2</span>); <span class="hljs-comment">/* 1️⃣ */</span>
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">1rem</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eee</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#333</span>;
+  <span class="hljs-attribute">text-align</span>: center;
+}</code></pre>
+          <p class="smaller">
+            1️⃣ The border color uses the rgba color method in order to take advantage of a subtle,
+            transparent border effect. The RGBA value consists of four values: red, green, blue, and
+            alpha. The first three values (0, 0, 0) represent black, and the last value (.2)
+            represents the alpha or opacity of the color. An alpha
+            value of .2 means that the color is mostly transparent, allowing the background to show
+            through. By using this border color, the border appears very light and barely
+            noticeable, while still providing a subtle visual cue that helps to separate elements on
+            a webpage.
+            Additionally, it can help to add a layer of visual interest to the design without being
+            overly distracting or detracting from the overall layout.</p>
+        </details>
+
+      </li>
+      <li>Set the <code>img</code> inside the <code>aside</code> to have a width of 200 pixels and a
+        height of auto (This auto setting ensures that we do not change the images aspect ratio. Why
+        is that important?)
+        <details open="">
+          <summary>Example</summary>
+          <pre><code class="css hljs language-css"><span class="hljs-selector-tag">aside</span> <span class="hljs-selector-tag">img</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">height</span>: auto;
+}</code></pre>
+        </details>
+      </li>
+
+      <li>To not allow the existing <code>img</code> CSS selector to affect this new image, change
+        the selector for the existing profile <code>img</code> to be more exclusive by adding the
+        <code>main</code> parent selector.
+        <pre><code class="css hljs language-css"><span class="hljs-selector-tag">main</span> <span class="hljs-selector-tag">img</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">150px</span>;
+  <span class="hljs-attribute">height</span>: auto;
+  ...
+}</code></pre>
+      </li>
+      <li>Change the existing paragraph <code>p</code> padding property value to 0
+        pixels.<br><em>Note that any 0 value does not need to specify the units.</em>
+        <pre><code class="css hljs language-css"><span class="hljs-selector-tag">p</span> { <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;}</code></pre>
+      </li>
+      <li>Apply CSS to the <code>&lt;footer&gt;</code> element to 1️⃣add a top margin to separate it
+        from the <code>main</code> element content, 2️⃣add a top border to design additional
+        distinction from the <code>main</code> content, and 3️⃣align the any text in the
+        <code>footer</code> to the center of its content box.
+        <details open="">
+          <summary>Example</summary>
+          <pre><code class="css hljs language-css"><span class="hljs-selector-tag">footer</span> {
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">15px</span>;
+  <span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#000</span>;
+  <span class="hljs-attribute">text-align</span>: center;
+}</code></pre>
+          <p class="smaller"><strong>Explanation</strong><br>
+            <code>margin-top</code> specifies just the top of the element to have a margin of 15
+            pixels.<br>
+            <code>border-top</code> uses a <a href="https://www.w3schools.com/csS/css_border_shorthand.asp" target="_blank">shorthand</a> property list to set the border-width, border-style, and
+            border-color in one declaration versus three.<br>
+            <code>text-align</code> sets the text alignment to center.
+          </p>
+
+        </details>
+      </li>
+      <li>Be sure to test your page locally often using the <strong>Live Server</strong> extension
+        in VS Code. Remember that server tool will render the page in your default browser as a web
+        page.
+        <div class="callout info">You do not need to be on the internet to test your page locally
+          with it running with Live Server.</div>
+      </li>
+
+      <li><strong>Save</strong> your work.</li>
+    </ol>
+
+    <div class="callout info">Assignment Demonstration: 🎦 <a href="https://video.byui.edu/media/t/1_5xptpphz" target="_blank">Home Page Enhancement</a>
+    </div>
+
+    <h4>Testing</h4>
+    <ul>
+      <li>Every page in this course will be expected to pass the <a href="https://byui-cse.github.io/wdd130-ww-course/week07/dev-standards.html">development
+          standards checklist</a>.<br> Review
+        your
+        rendered page and markup against this checked items.</li>
+      <li>Use this 🧪<a href="https://byui-cse.github.io/wdd130-ww-course/grader/w02-homepage.html">Page Evaluation</a> tool to check that
+        you
+        have
+        the appropriate elements.</li>
+      <li>Validate the HTML by running the <strong>Web Developer</strong> extension in your browser.
+        Correct any errors.
+      </li>
+      <li>Validate the CSS. Correct any errors that are reported.</li>
+    </ul>
+
+    <h3>Submission</h3>
+    <ol>
+      <li>Commit and push your changes to your wdd130 GitHub Pages repository.</li>
+      <li>Return to I-learn to submit your wdd130 GitHub Pages URL:
+        <pre><code class="cli hljs language-bash">https://githubusername.github.io/wdd130</code></pre>
+      </li>
+    </ol>
+  </main>
+  <footer>
+    <p>Copyright © Brigham Young University-Idaho | All rights reserved</p>
+  </footer>
+  <script src="./WDD 130 _ W02 _ Course Home Page Enhancement_files/highlight.min.js.download"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="./WDD 130 _ W02 _ Course Home Page Enhancement_files/prevent-code-select.js.download"></script>
+
+
+</body></html>
