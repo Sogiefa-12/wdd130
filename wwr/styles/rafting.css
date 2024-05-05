@@ -72,3 +72,15 @@ section h2 p{
 .sociallinks a{
  text-decoration: none;
 }
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
