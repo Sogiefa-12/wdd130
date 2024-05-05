@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Rubik+Moonrocks&display=swap');
+
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+:root {
+    --primary-color: #20495B ;
+    --secondary-color: #7ca7cb;
+    --accent1-color: #99faff;
+    --accent2-color: white;
+
+  
+    --heading-font: 'Rubik Moonrocks', serif;
+    --paragraph-font: 'Helvetica', serif;
+
+
+    --headline-color-on-white: #20495B;  /* headlines on a white background */ 
+    --headline-color-on-color: #99faff ; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #20495B; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #396E94  ;
+    --nav-link-color: ##7ca7cb;
+    --nav-background-color: #99faff;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #396E94;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+
+.hero img{
+    
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 20%;
+}
+
+.hero h1{
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.hero  article img{
+    position: relative;
+    float: right;
+    width: 15%;
+    top: 0px; 
+    bottom: 15px;
+}
+
+.hero article  p{
+    position: relative;
+    color:#99faff;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+section h2 p{
+    display: inline-block;
+}
+
+.sociallinks a{
+ text-decoration: none;
+}
