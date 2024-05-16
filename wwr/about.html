@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
-    <header>
-        <img src="images/logo.jpg" alt="logo">
-        <nav>
+    <header class="header">
+        <img class = "logo" src="images/logo.png" alt="logo">
+        <nav aria-label="site menu" class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -26,34 +26,65 @@
 
             <article>
                 <img src="images/happy.jpg" alt="Happy Client">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique voluptatibus quidem inventore corrupti ut asperiores totam. Aperiam, deserunt! Amet facilis nostrum asperiores reiciendis nesciunt quis ratione quos a provident eveniet!</p>
+                <p>Are you looking for a place spend quality time by your self, with family or with a team of outdoor lovers. Ogiefa's White Water Rafting is just the place for you. it is a place for relaxation, the thrill and moments of creating amazing memories </p>
             </article>
         </div>  
         
-        <section>
-            <h2>History</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non laboriosam quasi esse dolorem provident earum! Deleniti repellat labore ullam, repudiandae pariatur, perferendis praesentium, iure itaque nostrum quasi error vitae ut?</p>
+        <section class="history" >
+            <div class="left-text">
+                <p class="Left-text">History of Whitewater Rafting Whitewater rafting can be traced back to 1811 when the first recorded attempt to navigate the Snake River in Wyoming was planned. With no training, experience, or proper equipment, the river was found to be too difficult and dangerous. Hence, it was given the nickname “Mad River.”</p> 
+            </div>
+            <div class="center">
+                <h2>History</h2>
+                <img src="images/backimage.jpg" alt="history pics">     
+            </div>
+            <div class="right-text">
+                <p>The first rubber raft was made by Lt. John Fremont and Horace H. Day believed to be built it the 1840s. They planned to survey the Rocky Mountains and Great Plains. Although invented back then, it wasnʼt until the turn of the century that the first commercial rafting trip took place. On June 9, 1940, Clyde Smith lead a successful trip through the Snake River Canyon. </p>
+            </div>
         </section>
 
-        <section>
-            <h2>Adventure Awaits You</h2>
-            <img src="images/JoyousVoyage.jpg" alt = "Image_1">
-            <h6>JoyousVoyage</h6>
-            <img src="images/image2.jpg" alt = "Image_2">
-            <h6>Rapid Rafters</h6>
-            <img src="images/image3.jpg" alt = "Image_3">
-            <h6>Team Rafters</h6>
-            <img src="images/image4.jpg" alt = "Image_4">
-            <h6>Outdoor Lovers</h6>
-            <img src="images/image5.jpg" alt = "Image_5">
-            <h6>Adventure Spiral</h6>
-        </section>
+ <section class="adventure">
+    <h2>Adventure Awaits You</h2>
+    <div class="grid-container">
+        <div class="flex-container">
+            <figure> 
+                <img src="images/JoyousVoyage.jpg" alt = "JoyousVoyage">
+            </figure>
+            <figcaption>Joyous Voyage</figcaption>
+        </div>
+        <div class="flex-container"> 
+            <figure>
+                <img src="images/image2.jpg" alt = "pic2">
+            </figure>
+            <figcaption>Rapid Rafters</figcaption>
+        </div>
+        <div class="flex-container"> 
+            <figure>
+                <img src="images/image3.jpg" alt = "pic3">
+            </figure>
+            <figcaption>Team Rafters</figcaption>
+        </div>
+        <div class="flex-container"> 
+            <figure>
+                <img src="images/image4.jpg" alt = "pic4">
+            </figure>
+            <figcaption>Outdoor Lovers</figcaption>
+        </div>
+        <div class="flex-container"> 
+            <figure>
+                <img src="images/image5.jpg" alt = "pic6">
+            </figure>
+            <figcaption>Adventure Spiral</figcaption>
+        </div>
+    </div>
+    
+</section>
     </main>
 
     <footer>
         <p>Copyright &copy; 2024, Ogiefa's White Water Rafters  Sarah Imarhenakhue Ogiefa</p>
         
-        <nav class="sociallinks">
+        <nav class="social-links" aria-label="social handles">
             <a href="https://facebook.com">
                 <img src="images/facebook.png" alt="facebook">
             </a>
