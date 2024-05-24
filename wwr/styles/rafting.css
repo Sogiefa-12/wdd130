@@ -235,9 +235,16 @@ footer p{
     width: 48%;
 }
 
+.company-info iframe {
+    width:350px;
+    border: 5px solid;
+    border-radius: 25px;
+}
+
 .company-info:last-child {
     margin: 10px 10px 10px 10px;
     padding: 15px;
+
 }
 
 .company-info address {
@@ -308,6 +315,18 @@ form h5{
     padding: 15px;
     font-size: large;
 }
+
+form button {
+    width: 100%;
+    padding: 5px;
+    font-size: large;
+    font-weight: 900;
+    font-style: italic;
+    background: var(--accent1-color);
+    border: 1px solid var(var(--accent2-color));
+    border-radius: 5px;
+}
+
 
 footer {
     display: flex;
