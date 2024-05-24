@@ -84,6 +84,8 @@ section h2 p{
 
 nav {
     text-align: right;
+    margin: 10px;
+    
 }
 
 .navigation ul {
@@ -104,6 +106,11 @@ header {
     align-items: center;
     background-color: var(--nav-background-color);
     max-width:960px;
+    border: 15px solid #20495B;
+    border-radius: 5%;
+    margin: 10px;
+    font-size: large;
+    font-weight: 400;
 }
 .logo img {
     margin: 0 0.25rem 0 1rem;
@@ -193,9 +200,7 @@ img {
   }
 
 
-footer{
-    display: flex;
-}
+
 footer p{
     display: flex;
     justify-content: center;
@@ -207,11 +212,122 @@ footer p{
     color: var(--primary-color);
     text-align: left;
     position: relative;
+    font-weight: 400;
+    font-style: oblique;
+    font-family: sans-serif;
 
 }
 .social-links{
     display: flex;
     width: 35%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    justify-items:center ;
+
+}
+
+
+/* Contact Us Page*/
+
+.company-info {
+    display: inline-block;
+    width: 48%;
+}
+
+.company-info:last-child {
+    margin: 10px 10px 10px 10px;
+    padding: 15px;
+}
+
+.company-info address {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: var(--accent1-color);
+    border: 1px solid var(var(--accent2-color));
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: 600;
+}
+
+section h2 {
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin: 4rem;
+    padding: 2rem;
+}
+
+.employee-profiles {
+    display: flex;
+    padding: 15px;
+    margin: 15px;
+    justify-content: space-between;
+    justify-items: flex-end;
+}
+
+.employee-profiles img {
+    width: 70%;
+    max-width: 200px;
+    border-radius: 20%;
+    margin-bottom: 15px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    background: #c9ebf9;
+
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: large;
+    font-weight: 900;
+    font-style: italic;
+}
+
+form input[type="text"], form input[type="email"], form textarea[type="text"] {
+    width: 98%;
+    padding: 5px;
+    font-size: large;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 15px;
+    font-size: large;
+}
+
+footer {
+    display: flex;
+    background: #99faff;
+    margin-top: 70px;
+    margin-bottom: 15px;
+    height: 5%;
+    border: 15px solid #20495B;
+    border-radius: 5%;
+    padding: 0px;
+}
+
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: medium;
+    font-weight: 400;
+    text-decoration: underline;
+    margin-right: 10px;
 }
