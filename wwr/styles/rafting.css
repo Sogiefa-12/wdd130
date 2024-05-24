@@ -253,8 +253,8 @@ footer p{
     margin-right: 15px;
     margin-left: 15px;
     background-color: var(--accent1-color);
-    border: 1px solid var(var(--accent2-color));
-    border-radius: 5px;
+    border: 1px solid var(--accent2-color);
+    border-radius: 5%;
     font-size: larger;
     font-weight: 600;
 }
