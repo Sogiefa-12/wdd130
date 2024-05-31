@@ -402,6 +402,13 @@ footer a {
     justify-content: center;
 }
 
+.book-now a:hover{
+    
+    background-color: #709abd;
+    padding: 10px;
+    border-radius: 20%;
+}
+
 .trips-pictures{
     
     display: flex;
@@ -431,4 +438,11 @@ h1{
     margin: auto;
     justify-content: center;
     margin-top: 10px;
+}
+
+.trips-pictures a:hover{
+    
+    background-color: #709abd;
+    padding: 6px;
+    border-radius: 30%;
 }
