@@ -189,7 +189,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, minmax(100px, auto));
-    gap:8px;
+    gap:4px;
 }
 
 .flex-container{
@@ -198,6 +198,9 @@ header {
     align-items: center;
 }
 
+.flex-container img{
+    width: 100%;
+}
 img {
     width: 90%;
     max-width: 100%;
@@ -501,3 +504,63 @@ h1{
     background-color: #ccd1d3;
 }
 
+
+.my-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(100px, auto));
+    gap:8px;
+}
+
+.call-to-rafting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   
+}
+
+.call-to-rafting img{
+    width: 70%;
+    max-width: 100%;
+    justify-content:space-around;
+    height: 35vh;
+}
+
+.my-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(100px, auto));
+    gap:8px;
+}
+
+
+/* Trips Page */
+
+.equipment-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(100px, auto));
+    gap:8px;
+}
+.equipment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   
+}
+
+.equipment img{
+    width: 70%;
+    max-width: 100%;
+    justify-content:space-around;
+    height: 60%;
+    border-radius: 15%;
+}
+    
+    
+
+    
+ 
+    
